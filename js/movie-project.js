@@ -19,8 +19,7 @@ let movieAPICall = () => {
         })
         domMovieBuilder(movies);
     }).catch(err => {
-        console.log(`There was an API error of the following: ${err}`);
-        alert(`Sorry, there was an error retrieving movie data.  Please try again later.`)
+
     });
 }
 
@@ -45,8 +44,10 @@ $(document).ready(() => {
             console.log(data);
 
         }).catch(err => {
-            console.log(`There was an API error of the following: ${err}`);
-            alert(`Sorry, there was an error retrieving movie data.  Please try again later.`)
+
         });
+
     })
+
 });
+
