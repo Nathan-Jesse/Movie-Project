@@ -1,4 +1,5 @@
 function addMovies(data){
+    console.log(data)
     for(let i = 0; i < data.length; i++){
         let actors = data[i].actors;
         console.log("here is our actors: " + actors);
