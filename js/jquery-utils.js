@@ -51,3 +51,4 @@ function renderMovies(data){
 </div>`)
     }
 }
+

@@ -59,3 +59,5 @@ function editMovie(id){
     $(`#card_form_${id}`).show()
     $(`#card_${id}`).hide()
 }
+
+
