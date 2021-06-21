@@ -1,6 +1,8 @@
+
 //----------jquery-utils.js-------
 
 function addMovies(data){
+
 
     $('#movie-container').empty();
 
@@ -67,4 +69,5 @@ function renderMovies(data){
 </div>`)
     }
 }
+
 

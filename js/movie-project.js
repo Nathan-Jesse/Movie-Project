@@ -2,6 +2,7 @@
 
 let state = {};
 
+
 function getMovies() {
     $.ajax('https://fanatical-fluorescent-silica.glitch.me/movies')
         .then(response => {
