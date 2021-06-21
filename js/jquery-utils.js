@@ -1,8 +1,23 @@
 
+//----------jquery-utils.js-------
+
+function addMovies(data){
+
 
     $('#movie-container').empty();
 
     renderMovies(data);
+    $('#movie-container').append(`<div id="movies-n-ratings" class="card col-lg-3 col-xs-12" style="width: 18rem;">
+                <div style="white-space: pre-line; display: inline-grid; text-align-last: center; margin-block: auto">
+                    <input id="add-img" placeholder="Movie Poster (Use URL)">
+                    <input id="add-title" placeholder="Movie Title">
+                    <input id="add-year" placeholder="What Year movie came out">
+                    <input id="add-genre" placeholder="Movie Genre">
+                    <input id="add-plot" placeholder="Movie Plot">
+                    <input id="add-rating" placeholder="Movie Rating 1-5">
+                    <button class="btn btn-primary" onclick="postNewMovie()">Add</button>
+                </div>
+            </div>`)
 }
 
 function renderMovies(data){
@@ -20,11 +35,14 @@ function renderMovies(data){
 
 
         $('#movie-container').append(`
-<div class="card col-3" style="width: 18rem;">
+<div class="card col-lg-3 col-sm-6" style="width: 18rem;">
   <div class="card-body movie-card">
-    <img src=${moviePoster} class="card-img-top" alt="...">
+    <img src=${moviePoster} class="card-img-top" style="height: 45%" alt="...">
     <form onsubmit="event.preventDefault(); sendUpdate(event, ${data[i].id})"id="card_form_${data[i].id}" style="display:none">
+      <input class="card-poster" value="${moviePoster}">
+      <hr>
       <input class="card-title" value="${movieTitle}"/>
+      <hr>
       <input class="card-title" value="${year}"/>
       <hr>
       <input class="card-text" value="${genre}"/>
