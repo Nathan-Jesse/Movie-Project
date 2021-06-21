@@ -9,15 +9,15 @@
 /*}*/
 
 
-body {
-    justify-content: center;
-    align-items: center;
-    background: black;
-    display: flex;
-    /*height: 100vh;*/
-    padding: 0;
-    margin: 0;
-}
+/*body {*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    background: black;*/
+/*    display: flex;*/
+/*    height: 100vh;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
 
 /*.progress {*/
 /*    background: rgba(255,255,255,0.1);*/
